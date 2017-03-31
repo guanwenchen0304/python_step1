@@ -31,3 +31,59 @@ if(int(s)>100):</br>
 print(int(s),"大於100")</br>
 else:</br>
 print(int(s),"小於100")  
+
+import random 
+ans=random.randint(0,10) >>> 答案在0到10間的整數
+s=input("請輸入數字:") >>> 輸出 請輸入數字
+print("你輸入的數字:",int(s)) >>> 指示使用者在(你輸入的數字)後打數字
+while(ans != int(s)): >>> 當答案不等於使用者輸入的數字
+    if(ans<int(s)): >>> 如果答案小於猜的數字
+       print("你輸入的數字小於:",int(s)) >>> 打 你輸入的數字小於猜的數字:
+    else: >>> 除非如果 答案大於使用者輸入的數字
+       print("你輸入的數字大於:",int(s)) >>> 打 你輸入的數字大於猜的數字
+    print("猜吧") >>> 顯示出請繼續猜吧
+    s=input("請輸入數字:") >>> 就會輸出,請輸入數字:
+print("答對了") >>> 答對了結束
+
+a=input("請輸入a:")  
+b=input("請輸入b:") 
+method=input("請輸入method:")
+if(int(method) == 1):
+    print("a+b=",int(a)+int(b))
+elif(int(method)  == 2):
+    print("a-b=",int(a)-int(b))
+elif(int(method) == 3):
+    print("a*b=",int(a)*int(b))
+else:
+    print("a/b=",int(a)/int(b))
+    
+    def add_function(a,b):
+    c = a+b
+    print (c)
+
+def decrease_function(a,b):
+    c = a-b
+    print (c)
+
+def multiply_function(a,b):
+    c = a*b
+    print (c)
+
+def divide_function(a,b):
+    c = a/b
+    print (c)
+    
+if __name__=="__main__":
+    a=input("請輸入a:")
+    b=input("請輸入b:")
+    method=input("請輸入method:")
+    if(int(method) == 1):
+        add_function(int(a),int(b))
+    elif(int(method)  == 2):
+        decrease_function(int(a),int(b)) 
+    elif(int(method) == 3):
+        multiply_function(int(a),int(b))  
+    elif(int(method) == 4):
+        divide_function(int(a),int(b))
+    else:
+        print("錯誤")
